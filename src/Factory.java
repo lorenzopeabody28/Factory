@@ -1,3 +1,5 @@
+import javax.print.attribute.standard.PrinterInfo;
+
 public class Factory {
     //make a variable called yearFounded that is an integer
     //instance variables at the top of class, they can be seen by every class
@@ -62,9 +64,14 @@ public class Factory {
         System.out.println("Model: "+ plane4.model);
         System.out.println("Length: "+ plane3.length + "m");
 
+        Airplanes plane67 = new Airplanes(232);
+        System.out.println("Capacity: "+ plane67.capacity +" elephants");
         //todo; hw; make 2 more airplane objects
         //todo; for one of the objects change all the instance variables
         //todo; for both objects print all the instance variables
+
+        Airplanes plane5 = new Airplanes();
+        plane5.PrintInfo();
 
 
 

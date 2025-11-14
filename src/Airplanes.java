@@ -16,4 +16,22 @@ public class Airplanes {
         isDoubleDecker = false;
         length =157;
     }
+
+    //constructor with parameter
+    public Airplanes(int pCapacity){
+        capacity = pCapacity;
+        name = "Jacob6";
+        model = "Boeing 737";
+        isDoubleDecker = false;
+        length =157;
+    }
+    public void PrintInfo(){
+        System.out.println("Name: "+ name);
+        System.out.println("Capacity: "+ capacity);
+        System.out.println("Double Decker: "+ isDoubleDecker);
+        System.out.println("Model: "+ model);
+        System.out.println("Length: "+ length + "m");
+
+    }
+// todo: make a method called PrintInfo() that prints the airplanes instance variables
 }
