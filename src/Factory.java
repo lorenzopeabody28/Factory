@@ -64,14 +64,21 @@ public class Factory {
         System.out.println("Model: "+ plane4.model);
         System.out.println("Length: "+ plane3.length + "m");
 
-        Airplanes plane67 = new Airplanes(232);
-        System.out.println("Capacity: "+ plane67.capacity +" elephants");
+        Airplanes plane67 = new Airplanes(232, "Jacob6", "Boeing", false, 167);
+        System.out.println("Name: "+ plane67.name);
+        System.out.println("Capacity: "+ plane67.capacity);
+        System.out.println("Double Decker: "+ plane67.isDoubleDecker);
+        System.out.println("Model: "+ plane67.model);
+        System.out.println("Length: "+ plane67.length + "m");
+
         //todo; hw; make 2 more airplane objects
         //todo; for one of the objects change all the instance variables
         //todo; for both objects print all the instance variables
 
         Airplanes plane5 = new Airplanes();
         plane5.PrintInfo();
+
+        David d1 = new David();
 
 
 

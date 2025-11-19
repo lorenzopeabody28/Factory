@@ -18,20 +18,27 @@ public class Airplanes {
     }
 
     //constructor with parameter
-    public Airplanes(int pCapacity){
+    //todo add a parameter for model, isdoubledecker, and length to the constructor
+    //todo set the value of the instance variables to the parameters
+    //todo fix the related problems in factory
+    public Airplanes(int pCapacity, String pname, String pmodel, boolean pisDoubleDecker, int plength){
         capacity = pCapacity;
-        name = "Jacob6";
-        model = "Boeing 737";
-        isDoubleDecker = false;
-        length =157;
+        name = pname;
+        model = pmodel;
+        isDoubleDecker = pisDoubleDecker;
+        length = plength;
+
+        //left of equal sign is the storage container, the right is the value we are putting into the storage container
+        //that's why pname = name; doesn't work
+
     }
     public void PrintInfo(){
-        System.out.println("Name: "+ name);
-        System.out.println("Capacity: "+ capacity);
+        System.out.println("This plane is named "+ name); //more fancy readable
+        System.out.println("Capacity: "+ capacity); //readable simple
         System.out.println("Double Decker: "+ isDoubleDecker);
         System.out.println("Model: "+ model);
-        System.out.println("Length: "+ length + "m");
-
+        System.out.println("The length of the plane is "+ length + "m"); // super fancy readable
+        //System.out.println(model); //not readable
     }
 // todo: make a method called PrintInfo() that prints the airplanes instance variables
 }
