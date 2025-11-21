@@ -75,15 +75,21 @@ public class Factory {
         //todo; for one of the objects change all the instance variables
         //todo; for both objects print all the instance variables
 
-        Airplanes plane5 = new Airplanes();
-        plane5.PrintInfo();
 
-        David d1 = new David();
+        David david1  = new David();
+        PrinterInfo();
+        //System.out.println("Name: " + david1.name);
+        //System.out.println("Age: " + david1.number1 + " years old");
+        //System.out.println("He likes sleeping with elephants: " + david1.trueOrFalse + ".");
 
-
+        David david2 = new David("Bob", 41, true);
+        System.out.println("Name: " + david2.name);
+        System.out.println("Age: " + david2.number1 + " years old");
+        System.out.println("He likes sleeping with elephants: " + david2.trueOrFalse + ".");
 
         //todo: give all of plane1's instance vars values
     }
+
     //sout makes System.out.println()
     public void factoryInfo () {//make a method called factoryInfo
         System.out.println("Year founded: "+ yearFounded);
